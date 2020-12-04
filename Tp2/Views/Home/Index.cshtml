@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+
+    <br />
+
+    <h1 class="display-4" style="font: roboto">Bienvenido</h1>
+    <br />
+    <br />
+
+    <div style="margin: 0 auto 0 auto; left: 0; right: 0; position: fixed; display: block; background-color: rgb(0,0,0.5); width: 40%; border-radius: 20px; justify-content: center; align-items: center; text-align: center">
+        <br />
+
+        <p style="color: white; font: roboto">Por favor inicie sesion para poder descargar nuestra Aplicacion</p>
+        <br />
+
+
+
+        <form asp-action="Login" asp-controller="Home" method="post">
+
+            <input type="text" name="usuario" placeholder="Usuario" />
+            <br />
+            <input type="password" name="password" placeholder="Password" />
+            <br />
+            <br />
+            <input style="border-radius: 5px" type="submit" value="Iniciar sesión" />
+
+        </form>
+
+        <br />
+
+    </div>
+
+
+</div>
